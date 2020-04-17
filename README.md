@@ -1,6 +1,6 @@
 <h1 align="center">Bash</h1>
 
-Компиляция и запуск
+Компиляция и запуск run_makefile.sh
 ```
 #!/bin/bash
 echo "Start script"
