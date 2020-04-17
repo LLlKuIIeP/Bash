@@ -40,3 +40,13 @@ curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 composer -v
 #************************************************
+
+#       NPM
+echo -e "\n\n\tinstall NPM\n"
+sudo curl https://www.npmjs.com/install.sh | sudo sh
+
+sudo npm install -g node-pre-gyp
+sudo ng init
+sudo npm i
+sudo npm audit fix
+#************************************************
