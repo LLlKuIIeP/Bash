@@ -44,11 +44,11 @@ composer -v
 
 #       Node.js
 sudo apt update
-sudo apt install nodejs
+sudo apt install nodejs -y
 
 
 #       NPM
 echo -e "\n\n\tinstall NPM\n"
 sudo apt update
-sudo apt install npm
+sudo apt install npm -y
 #************************************************
