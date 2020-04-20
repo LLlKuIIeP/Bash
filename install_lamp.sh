@@ -51,6 +51,11 @@ sudo apt install nodejs -y
 echo -e "\n\n\tinstall NPM\n"
 sudo apt update
 sudo apt install npm -y
+sudo rm -rf node_modules
+sudo npm update
+sudo npm install
+sudo npm i npm@latest -g
+sudo npm audit fix
 #************************************************
 
 
@@ -61,4 +66,9 @@ cd ~/
 git clone https://github.com/Kitware/CDash.git
 cd CDash
 composer install --no-dev --prefer-dist
+sudo npm install
+sudo npm run production
+cp .env.example .env
+php artisan key:generate
+sudo php artisan config:migrate
 #************************************************
