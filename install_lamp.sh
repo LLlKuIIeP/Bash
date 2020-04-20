@@ -1,9 +1,8 @@
 #!/bin/bash
 
-sudo apt-get update
-
-#	Apache MySql PHP
+#	Install Apache MySQL PHP
 echo -e "\n\n\tinstall lamp\n"
+sudo apt-get update
 sudo apt install tasksel -y
 sudo tasksel install lamp-server
 
@@ -33,7 +32,7 @@ rm -f create_user.sql
 
 #       Composer
 echo -e "\n\n\tinstall Composer\n"
-sudo update
+sudo apt-get update
 sudo apt-get install -y wget php-cli php-zip unzip curl
 cd ~/
 curl -sS https://getcomposer.org/installer | php
@@ -43,8 +42,8 @@ composer -v
 
 #       NPM
 echo -e "\n\n\tinstall NPM\n"
+sudo apt-get update
 sudo curl https://www.npmjs.com/install.sh | sudo sh
-
 sudo npm install -g node-pre-gyp
 sudo ng init
 sudo npm i
