@@ -6,11 +6,6 @@ sudo apt-get update
 sudo apt install tasksel -y
 sudo tasksel install lamp-server
 
-echo -e "\n\n\tinstall modules for php\n"
-sudo add-apt-repository ppa:ondrej/php
-sudo apt-get update
-sudo apt-get install -y php-bcmath php-curl php-db php-mbstring php-mysql php-bz2 php-xml
-
 echo -e "\n\n\tinstall phpmyadmin\n"
 sudo add-apt-repository ppa:phpmyadmin/ppa
 sudo apt-get update
@@ -25,8 +20,14 @@ echo -e "CREATE USER 'user'@'localhost' IDENTIFIED WITH mysql_native_password BY
 echo -e "GRANT ALL PRIVILEGES ON * . * TO 'user'@'localhost';\n" >> create_user.sql
 echo -e "FLUSH PRIVILEGES;" >> create_user.sql
 sudo mysql < create_user.sql
-exit
 rm -f create_user.sql
+
+echo -e "\n\n\tinstall modules for php\n"
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get update
+sudo apt-get install -y php-bcmath php-curl php-db php-mbstring php-mysql php-bz2 php-xml
+
+sudo service apache2 reload
 #************************************************
 
 
