@@ -51,11 +51,11 @@ sudo apt install nodejs -y
 echo -e "\n\n\tinstall NPM\n"
 sudo apt update
 sudo apt install npm -y
-sudo rm -rf node_modules
-sudo npm update
-sudo npm install
-sudo npm i npm@latest -g
-sudo npm audit fix
+#sudo rm -rf node_modules
+#sudo npm update
+#sudo npm install
+#sudo npm i npm@latest -g
+#sudo npm audit fix
 #************************************************
 
 
