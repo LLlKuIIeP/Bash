@@ -65,7 +65,7 @@ sudo apt update
 cd ~/
 git clone https://github.com/Kitware/CDash.git
 cd CDash
-composer install --no-dev --prefer-dist
+sudo composer install --no-dev --prefer-dist
 sudo npm install
 sudo npm run production
 cp .env.example .env
