@@ -25,7 +25,7 @@ rm -f create_user.sql
 echo -e "\n\n\tinstall modules for php\n"
 sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
-sudo apt-get install -y php-bcmath php-curl php-db php-mbstring php-mysql php-bz2 php-xml
+sudo apt-get install -y php-bcmath php-curl php-db php-mbstring php-mysql php-bz2 php-xml php-ldap
 
 sudo service apache2 reload
 #************************************************
@@ -51,4 +51,14 @@ sudo apt install nodejs -y
 echo -e "\n\n\tinstall NPM\n"
 sudo apt update
 sudo apt install npm -y
+#************************************************
+
+
+#       CDash
+echo -e "\n\n\tinstall CDash\n"
+sudo apt update
+cd ~/
+git clone https://github.com/Kitware/CDash.git
+cd CDash
+composer install --no-dev --prefer-dist
 #************************************************
