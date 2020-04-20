@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#	Install Apache MySQL PHP
+#       Install Apache MySQL PHP
 echo -e "\n\n\tinstall lamp\n"
 sudo apt-get update
 sudo apt install tasksel -y
@@ -40,10 +40,23 @@ sudo mv composer.phar /usr/local/bin/composer
 composer -v
 #************************************************
 
+
+#       Node.js
+echo -e "\n\n\tinstall Node.js\n"
+sudo apt-get update
+cd ~/
+git clone https://github.com/nodejs/node.git
+cd node
+sudo ./configure
+sudo make
+sudo make install
+node -v
+
+
 #       NPM
 echo -e "\n\n\tinstall NPM\n"
 sudo apt-get update
-sudo curl https://www.npmjs.com/install.sh | sudo sh
+sudo curl -L https://www.npmjs.com/install.sh | sudo sh
 sudo npm install -g node-pre-gyp
 sudo ng init
 sudo npm i
