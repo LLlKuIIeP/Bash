@@ -42,23 +42,12 @@ composer -v
 
 
 #       Node.js
-echo -e "\n\n\tinstall Node.js\n"
-sudo apt-get update
-cd ~/
-git clone https://github.com/nodejs/node.git
-cd node
-sudo ./configure
-sudo make
-sudo make install
-node -v
+sudo apt update
+sudo apt install nodejs
 
 
 #       NPM
 echo -e "\n\n\tinstall NPM\n"
-sudo apt-get update
-sudo curl -L https://www.npmjs.com/install.sh | sudo sh
-sudo npm install -g node-pre-gyp
-sudo ng init
-sudo npm i
-sudo npm audit fix
+sudo apt update
+sudo apt install npm
 #************************************************
