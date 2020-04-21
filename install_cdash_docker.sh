@@ -43,4 +43,4 @@ sudo apt-get update
 cd ~/
 git clone https://github.com/Kitware/CDash.git
 cd CDash
-docker-compose up -d
+sudo docker-compose up -d
