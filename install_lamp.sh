@@ -32,26 +32,26 @@ sudo service apache2 reload
 
 
 #       Composer
-echo -e "\n\n\tinstall Composer\n"
-sudo apt-get update
-sudo apt-get install -y wget php-cli php-zip unzip curl
-cd ~/
-curl -sS https://getcomposer.org/installer | php
-sudo mv composer.phar /usr/local/bin/composer
-composer -v
+#echo -e "\n\n\tinstall Composer\n"
+#sudo apt-get update
+#sudo apt-get install -y wget php-cli php-zip unzip curl
+#cd ~/
+#curl -sS https://getcomposer.org/installer | php
+#sudo mv composer.phar /usr/local/bin/composer
+#composer -v
 #************************************************
 
 
 #       Node.js
-sudo apt update
-sudo apt install nodejs -y
+#sudo apt update
+#sudo apt install nodejs -y
 
 
 #       NPM
-echo -e "\n\n\tinstall NPM\n"
-sudo apt update
-sudo apt install npm -y
-#sudo rm -rf node_modules
+#echo -e "\n\n\tinstall NPM\n"
+#sudo apt update
+#sudo apt install npm -y
+##sudo rm -rf node_modules
 #sudo npm update
 #sudo npm install
 #sudo npm i npm@latest -g
