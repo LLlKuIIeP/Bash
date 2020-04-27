@@ -2,7 +2,7 @@
 
 
 #       Install NodeJs
-echo -r "\n\n\tInstall NodeJs\n"
+echo -e "\n\n\tInstall NodeJs\n"
 sudo apt-get update
 cd ~/
 VERSION=v12.16.2
