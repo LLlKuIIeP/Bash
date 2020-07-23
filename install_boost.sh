@@ -15,3 +15,9 @@ sudo mkdir /opt/boost
 sudo chmod a+rwx /opt/boost
 
 ./b2 install --prefix=/opt/boost
+
+
+#     Env
+sudo sh -c "echp 'BOOST_ROOT=\"/opt/boost\"' >> /etc/environment"
+sudo sh -c "echp 'BOOST_LIBRARYDIR=\"/opt/boost/lib\"' >> /etc/environment"
+sudo sh -c "echp 'BOOST_INCLUDEDIR=\"/opt/boost/include\"' >> /etc/environment"
