@@ -3,7 +3,7 @@
 
 #       Install Clang
 echo -e "\n\n\tInstall Clang\n"
-sudo apt install -y clang llvm-dev git libclang-dev make cmake ninja
+sudo apt install -y clang llvm-dev git libclang-dev make cmake ninja-build
 export CC=/usr/bin/clang
 export CXX=/usr/bin/clang++
 
