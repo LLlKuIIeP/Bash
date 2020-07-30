@@ -21,6 +21,7 @@ sudo make install
 sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/local/bin/clang++ 40
 sudo update-alternatives --install /usr/bin/clang clang /usr/local/bin/clang 40
 sudo update-alternatives --install /usr/bin/g++ g++ /usr/local/bin/clang++ 40
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/local/bin/clang++ 40
 sudo update-alternatives --install /usr/bin/c++ c++ /usr/local/bin/clang++ 40
 sudo update-alternatives --install /usr/bin/cxx cxx /usr/local/bin/clang++ 40
 sudo update-alternatives --install /usr/bin/cc cc /usr/local/bin/clang++ 40
