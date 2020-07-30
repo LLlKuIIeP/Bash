@@ -13,6 +13,9 @@ cmake -G "Unix Makefiles" -DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra;libcxx
 cmake --build . -j 8
 sudo make install
 
+sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/local/bin/clang++ 40
+sudo update-alternatives --install /usr/bin/clang clang /usr/local/bin/clang 40
+
 
 #       Install Include what you use
 echo -e "\n\n\tInstall Include what you use\n"
