@@ -3,6 +3,11 @@
 
 #       Install Clang
 echo -e "\n\n\tInstall Clang\n"
+sudo apt install -y clang llvm-dev git libclang-dev
+export CC=/usr/bin/clang
+export CXX=/usr/bin/clang++
+
+
 cd ~
 git clone https://github.com/llvm/llvm-project.git
 cd llvm-project
@@ -17,6 +22,8 @@ sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/local/bin/clang
 sudo update-alternatives --install /usr/bin/clang clang /usr/local/bin/clang 40
 sudo update-alternatives --install /usr/bin/g++ g++ /usr/local/bin/clang++ 40
 sudo update-alternatives --install /usr/bin/c++ c++ /usr/local/bin/clang++ 40
+sudo update-alternatives --install /usr/bin/cxx cxx /usr/local/bin/clang++ 40
+sudo update-alternatives --install /usr/bin/cc cc /usr/local/bin/clang++ 40
 
 
 #       Install Include what you use
