@@ -30,3 +30,8 @@ sudo update-alternatives --install /usr/bin/cc cc /usr/local/bin/clang++ 40
 #       Install Include what you use
 echo -e "\n\n\tInstall Include what you use\n"
 sudo apt install -y iwyu
+
+
+#       Install CppCheck
+echo -e "\n\n\tInstall CppCheck\n"
+sudo apt install -y cppcheck
