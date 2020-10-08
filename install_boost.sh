@@ -11,17 +11,19 @@ echo -e "\n\n\tInstall Boost\n"
 #git submodule update
 
 cd /home/user/boost
+chmod +x tools/build/src/engine/build.sh
+
 bash ./bootstrap.sh
 
-sudo mkdir /opt/boost
-sudo chmod a+rwx /opt/boost
+mkdir /opt/boost
+chmod a+rwx /opt/boost
 
 ./b2 install --prefix=/opt/boost
 
 
 #     Env
-sudo sh -c "echo 'BOOST_ROOT=\"/opt/boost\"' >> /etc/environment"
-sudo sh -c "echo 'BOOST_LIBRARYDIR=\"/opt/boost/lib\"' >> /etc/environment"
-sudo sh -c "echo 'BOOST_INCLUDEDIR=\"/opt/boost/include\"' >> /etc/environment"
+sh -c "echo 'BOOST_ROOT=\"/opt/boost\"' >> /etc/environment"
+sh -c "echo 'BOOST_LIBRARYDIR=\"/opt/boost/lib\"' >> /etc/environment"
+sh -c "echo 'BOOST_INCLUDEDIR=\"/opt/boost/include\"' >> /etc/environment"
 
 source /etc/environment
