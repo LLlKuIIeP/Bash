@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd  /home/user
+
 wget http://download.qt.io/official_releases/qt/5.15/5.15.1/single/qt-everywhere-src-5.15.1.tar.xz
 tar -xf qt-everywhere-opensource-src-5.15.1.tar.xz
 cd qt-everywhere-opensource-src-5.15.1
