@@ -11,7 +11,7 @@ echo -e "\n\n\tInstall Boost\n"
 #git submodule update
 
 cd /home/user/boost
-chmod +x tools/build/src/engine/build.sh
+#chmod +x tools/build/src/engine/build.sh
 
 bash ./bootstrap.sh
 
