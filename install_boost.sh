@@ -4,11 +4,13 @@
 
 #       Install Boost
 echo -e "\n\n\tInstall Boost\n"
-cd ~
-git clone https://github.com/boostorg/boost.git
-cd boost
-git submodule init
-git submodule update
+#cd ~
+#git clone https://github.com/boostorg/boost.git
+#cd boost
+#git submodule init
+#git submodule update
+
+cd /home/user/boost
 bash ./bootstrap.sh
 
 sudo mkdir /opt/boost
