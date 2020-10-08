@@ -1,5 +1,7 @@
 #!/bin/bash
 
+apt install -y libxt-dev 
+
 mkdir /home/user/vtk_build
 cd /home/user/vtk_build
 
