@@ -18,7 +18,7 @@ bash ./bootstrap.sh
 mkdir /opt/boost
 chmod a+rwx /opt/boost
 
-./b2 install --prefix=/opt/boost
+./b2 install
 
 
 #     Env
