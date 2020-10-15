@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd  /home/user
+cd  /tmp
 
 wget http://download.qt.io/official_releases/qt/5.15/5.15.1/single/qt-everywhere-src-5.15.1.tar.xz
 tar -xf qt-everywhere-opensource-src-5.15.1.tar.xz
@@ -12,4 +12,4 @@ sudo ./configure -platform linux-g++-64 -opensource -confirm-license -make libs 
 
 make -j8
 
-sudo make install
+make install
