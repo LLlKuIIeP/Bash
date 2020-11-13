@@ -10,7 +10,7 @@ apt-get install -y bison flex gperf libgstreamer-plugins-base1.0-dev libasound2-
 chmod a+x configure
 ./configure -prefix /usr/local -release -platform linux-g++-64 -opensource -confirm-license -make libs -nomake tests -nomake examples -skip qtserialport
 
-#./configure -prefix /usr/local -release -platform linux-g++-64 -opensource -confirm-license -make libs -nomake tests -nomake examples -skip qtserialport -make tools -v 2>&1 1>/dev/null | grep library -A 10
+#rm -f config.cache && ./configure -prefix /usr/local -release -platform linux-g++-64 -opensource -confirm-license -make libs -nomake tests -nomake examples -skip qtserialport -make tools -v 2>&1 1>/dev/null | grep library -A 10
 
 
 make -j8
