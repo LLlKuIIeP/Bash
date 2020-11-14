@@ -18,7 +18,7 @@ bash ./bootstrap.sh
 
 #mkdir /opt/boost
 #chmod a+rw /opt/boost
-
+# sudo ./b2 cxxflags=-fPIC -a install
 ./b2 install
 
 
